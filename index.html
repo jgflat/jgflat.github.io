@@ -3,137 +3,170 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jeremy Granflaten | Data Scientist</title>
+
+<title>Jeremy Granflaten | Data Science Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
-  font-family:'Inter',sans-serif;
-  background:#0b1220;
-  color:#e5e7eb;
-  line-height:1.6;
+    font-family:'Inter',sans-serif;
+    background:#0b1220;
+    color:#e5e7eb;
+    line-height:1.6;
 }
 
 header{
-  padding:80px 20px;
-  text-align:center;
-  background:radial-gradient(circle at top,#1f2937,#020617);
+    padding:90px 20px;
+    text-align:center;
+    background:radial-gradient(circle at top,#1f2937,#020617);
 }
 
 h1{
-  font-size:3rem;
-  font-weight:700;
+    font-size:3.5rem;
+    font-weight:700;
 }
 
 .subtitle{
-  margin-top:10px;
-  color:#9ca3af;
-  font-size:1.2rem;
+    margin-top:15px;
+    color:#9ca3af;
+    font-size:1.2rem;
 }
 
 nav{
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  padding:15px;
-  background:#020617;
-  position:sticky;
-  top:0;
-  border-bottom:1px solid #1f2937;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:18px;
+    background:#020617;
+    position:sticky;
+    top:0;
+    border-bottom:1px solid #1f2937;
+    z-index:1000;
 }
 
 nav a{
-  color:#e5e7eb;
-  text-decoration:none;
-  font-weight:600;
+    color:#e5e7eb;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
 }
 
 nav a:hover{
-  color:#38bdf8;
+    color:#38bdf8;
 }
 
 section{
-  max-width:1100px;
-  margin:auto;
-  padding:70px 20px;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
 }
 
 h2{
-  font-size:2rem;
-  margin-bottom:25px;
-  border-bottom:2px solid #1f2937;
-  padding-bottom:10px;
+    font-size:2.2rem;
+    margin-bottom:30px;
+    border-bottom:2px solid #1f2937;
+    padding-bottom:10px;
 }
 
 .about p{
-  max-width:800px;
+    max-width:900px;
+    color:#cbd5e1;
+    font-size:1.05rem;
 }
 
 .projects{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
 }
 
 .card{
-  background:#111827;
-  padding:25px;
-  border-radius:18px;
-  transition:.3s;
-  border:1px solid #1f2937;
+    background:#111827;
+    padding:28px;
+    border-radius:20px;
+    border:1px solid #1f2937;
+    transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-5px);
-  border-color:#38bdf8;
+    transform:translateY(-6px);
+    border-color:#38bdf8;
 }
 
 .card h3{
-  margin-bottom:10px;
+    margin-bottom:12px;
+    font-size:1.25rem;
 }
 
 .card p{
-  color:#9ca3af;
-  font-size:.95rem;
+    color:#9ca3af;
+    font-size:.97rem;
 }
 
 .btn{
-  display:inline-block;
-  margin-top:15px;
-  padding:10px 14px;
-  background:#38bdf8;
-  color:#020617;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:600;
+    display:inline-block;
+    margin-top:18px;
+    padding:10px 16px;
+    background:#38bdf8;
+    color:#020617;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn:hover{
+    opacity:.85;
 }
 
 .contact p{
-  margin-bottom:10px;
+    margin-bottom:14px;
+    font-size:1rem;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
 }
 
 footer{
-  text-align:center;
-  padding:30px;
-  background:#020617;
-  color:#6b7280;
+    text-align:center;
+    padding:35px;
+    background:#020617;
+    color:#6b7280;
+    margin-top:40px;
 }
 
 .highlight{
-  color:#38bdf8;
+    color:#38bdf8;
+}
+
+@media(max-width:768px){
+    h1{
+        font-size:2.5rem;
+    }
+
+    nav{
+        flex-wrap:wrap;
+    }
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
 <h1>Jeremy Granflaten</h1>
-<p class="subtitle">Data Analyst | Machine Learning | Business-Focused Problem Solver</p>
+<p class="subtitle">
+Data Analyst | Machine Learning | AI & Business Analytics
+</p>
 </header>
 
 <nav>
@@ -144,65 +177,128 @@ footer{
 
 <section id="about" class="about">
 <h2>About Me</h2>
+
 <p>
-I am a data-driven problem solver focused on turning complex data into actionable business insights. My work combines <span class="highlight">Python, machine learning, and data analysis</span> to solve real-world problems such as pricing optimization, predictive modeling, and intelligent automation.
+I am a data-driven problem solver focused on transforming complex data into actionable insights through 
+<span class="highlight">machine learning, AI applications, and predictive analytics</span>. 
+My experience includes building predictive models, NLP systems, data analysis workflows, and AI-powered tools using Python, R, and machine learning frameworks.
+
 <br><br>
-I specialize in building practical solutions including predictive models, AI-powered tools, and data pipelines. My goal is to bridge the gap between data and decision-making by delivering insights that create measurable impact.
+
+I am especially interested in solving business problems through data science by combining technical analysis with practical decision-making. My portfolio highlights projects involving predictive modeling, financial analytics, natural language processing, and intelligent automation.
 </p>
 </section>
 
 <section id="projects">
 <h2>Projects</h2>
+
 <div class="projects">
 
 <div class="card">
-<h3>Housing Price Prediction Model</h3>
-<p>Developed a regression-based machine learning model to predict housing prices using real-world data.</p>
-<a href="https://github.com/jgflat/housing-price-prediction/tree/main" target="_blank" class="btn">View Project</a>
+<h3>Airbnb Price Prediction Project</h3>
+<p>
+Built machine learning models to predict Airbnb listing prices in New York City using regression techniques. The project includes data cleaning, exploratory data analysis, feature engineering, visualization, and model evaluation using Linear Regression and Random Forest models.
+</p>
+<a href="https://github.com/jgflat/airbnb-prediction-rate" target="_blank" class="btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>Housing Price Prediction</h3>
+<p>
+Developed a regression-based machine learning model to estimate housing prices using property characteristics and housing market data.
+</p>
+<a href="https://github.com/jgflat/housing-price-prediction" target="_blank" class="btn">View Project</a>
 </div>
 
 <div class="card">
 <h3>AI-Powered Document Q&A System</h3>
-<p>Built an NLP system using embeddings and vector databases for intelligent document search.</p>
-<a href="#" class="btn">View Project</a>
+<p>
+Built a Retrieval-Augmented Generation (RAG) system using LangChain, OpenAI embeddings, and vector databases to answer questions based on Wikipedia content with contextual accuracy.
+</p>
+<a href="https://github.com/jgflat/ai-powered-document-qa" target="_blank" class="btn">View Project</a>
 </div>
 
 <div class="card">
-<h3>Financial Data Analysis (SEC API)</h3>
-<p>Extracted and analyzed corporate financial filings to generate business insights.</p>
-<a href="#" class="btn">View Project</a>
+<h3>Financial Disclosure AI Analysis</h3>
+<p>
+Built an NLP pipeline using SEC filings, OpenAI fine-tuning, and readability analytics to simplify complex financial disclosures into plain-language explanations.
+</p>
+<a href="https://github.com/jgflat/financial-disclosure-ai-analysis" target="_blank" class="btn">View Project</a>
 </div>
 
 <div class="card">
-<h3>ML Pipeline with MLflow</h3>
-<p>Created a machine learning pipeline with experiment tracking and model versioning.</p>
-<a href="#" class="btn">View Project</a>
+<h3>MLflow LLM Tracking Pipeline</h3>
+<p>
+Developed an LLMOps workflow using MLflow and OpenAI APIs to track latency, token usage, prompts, and model performance across multiple AI experiments.
+</p>
+<a href="https://github.com/jgflat/mlflow-llm-tracking" target="_blank" class="btn">View Project</a>
 </div>
 
 <div class="card">
-<h3>Hall of Fame Prediction Model</h3>
-<p>Built a classification model to predict Hall of Fame induction using player statistics.</p>
-<a href="#" class="btn">View Project</a>
+<h3>Baseball Hall of Fame Prediction Project</h3>
+<p>
+Built machine learning models to predict MLB Hall of Fame induction using player statistics, awards, batting, pitching, and fielding data. Compared Logistic Regression, Random Forest, and Neural Network models with position-specific analysis and Hall of Fame probability predictions.
+</p>
+<a href="https://github.com/jgflat/baseball-hall-of-fame-prediction" target="_blank" class="btn">View Project</a>
 </div>
 
 <div class="card">
-<h3>Crime Data Analysis (FBI Dataset)</h3>
-<p>Performed exploratory data analysis in R to identify crime trends and regional differences.</p>
-<a href="#" class="btn">View Project</a>
+<h3>Crime Data Analysis (R Markdown)</h3>
+<p>
+Analyzed multiple U.S. crime datasets including hate crimes, cargo theft, human trafficking, and assaults using R. The project focuses on identifying trends over time and across regions through data cleaning, aggregation, and visualization using ggplot2 and dplyr.
+</p>
+<a href="https://github.com/jgflat/crime-data-analysis" target="_blank" class="btn">View Project</a>
 </div>
 
+<div class="card">
+<h3>AI Image Transformation</h3>
+<p>
+Built an AI-powered image generation and editing system using Stability AI. Demonstrates prompt engineering, image variation, and generative AI workflows.
+</p>
+<a href="https://github.com/jgflat/ai-image-transformation" target="_blank" class="btn">View Project</a>
 </div>
+
+<div class="card">
+<h3>Emoji Fine-Tuned Chatbot</h3>
+<p>
+Built a fine-tuned language model using OpenAI API to generate structured emoji-based responses. Includes dataset creation, model training, and evaluation of baseline vs fine-tuned performance.
+</p>
+<a href="https://github.com/jgflat/emoji-fine-tuning" target="_blank" class="btn">View Project</a>
+</div>
+
+<div class="card">
+<h3>Childcare Data Insights Project</h3>
+<p>
+Analyzed childcare-related datasets to uncover trends, patterns, and actionable insights using statistical analysis and data visualization.
+</p>
+<a href="https://github.com/jgflat/childcare-data-insights-Project" target="_blank" class="btn">View Project</a>
+</div>
+
 </section>
-
 <section id="contact" class="contact">
 <h2>Contact</h2>
+
 <p>Email: Jeremygranflaten@gmail.com</p>
-<p>GitHub: https://github.com/yourusername</p>
-<p>LinkedIn: https://www.linkedin.com/in/jeremy-granflaten-692b40288/</p>
+
+<p>
+GitHub:
+<a href="https://github.com/jgflat" target="_blank">
+github.com/jgflat
+</a>
+</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/jeremy-granflaten-692b40288/" target="_blank">
+LinkedIn
+</a>
+</p>
+
+
 </section>
 
 <footer>
-<p>© 2026 Jeremy Granflaten | Data Portfolio</p>
+<p>© 2026 Jeremy Granflaten | Data Science Portfolio</p>
 </footer>
 
 </body>
